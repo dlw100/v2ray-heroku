@@ -38,7 +38,7 @@ V2Ray 将在部署时自动安装最新版本。
 addEventListener(
   "fetch",event => {
     let url=new URL(event.request.url);
-    url.hostname="地址";
+    url.hostname="应用程序名.herokuapp.com";
     let request=new Request(url,event.request);
     event.respondWith(
       fetch(request)
